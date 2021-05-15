@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+}
+img{
+    width:100%;
+    height:100%;
+}
+
+header .black{
+    background-color: black;
+}
+
+.bg{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PWJFrMRkFRT29wjZpt0E5QZ5fDNjov3f_A&usqp=CAU);
+    background-size:cover;
+ 
+}
+
+
+
+
+.font-div{
+    width:30%;
+}
+
+
+.progress
+{
+  width: 100%;
+  max-width: 260px;
+  height: 0.8rem;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+  
+   .a{
+    display: block;
+    height: 100%;
+    
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+  
+  .d{
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+    
+@keyframes progress-animation{
+  0%
+  {
+    background-position: 100%;
+  }
+  100%
+  {
+    background-position: 0%;
+  }
+}
+#contact .btn{
+    width:30%;
+ 
+}
+
+.anime{
+
+    display:grid;
+    place-items: center;
+    background-color:transparent;
+}
+h1{
+    font-size:5rem;
+    font-weight: 700;
+    color:transparent;
+    position:relative;
+
+}
+h1::before{
+    content:"NAME";
+    width:100%;
+    color:white;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:slide 3s ease-in;
+    transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+    overflow: hidden;
+    animation-iteration-count: 5;
+}
+@keyframes slide{
+    0%{
+        width:0%;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width:0%;
+    }
+}
+
